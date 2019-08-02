@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    
+}
+html {
+    color: $color-light;
+}
+body {
+    background-image: url('../img/patt.png');
+    color: $color-light;
+}
+h1 {
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}

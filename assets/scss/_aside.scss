@@ -1,0 +1,47 @@
+.sidebar {
+    background-color: rgba(#7ab1e7, 0.5);
+    max-height: 900px;
+    padding: 30px;
+    border-right: 1px solid $color-light;
+    legend {
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .form-group {
+        margin-bottom: 15px;
+        &:not(:first-child) {
+            margin-top: 50px;
+        }
+    }
+    .form-check {
+        margin: 9px 0;
+        font-size: 1.3rem;
+        font-weight: 100;
+        
+    }
+    a {
+        color: $color-light;
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+        display: block;
+    }
+    &-btn {
+        height: 50px;
+        background-color: $color-dark;
+        border: 1px solid $color-light;
+        border-radius: 0;
+        font-weight: 500;
+        &:hover {
+            background-color: $color-light;
+            color: $color-dark;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        background-color: transparent;
+        border-right: none;
+        border-top: 1px solid $color-light;
+    }
+}

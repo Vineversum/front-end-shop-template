@@ -1,0 +1,103 @@
+.navbar {
+    padding: 25px 15px;
+}
+.navbar-toggler-icon {
+    color: black;
+}
+.nav-item {
+    
+    color: $color-dark;
+    font-size: 1.3rem;
+    height: 44px;
+    padding: 0px 0px;
+    
+    
+    .nav-link {
+        color: inherit;
+        font-size: 1.2rem;
+    }
+    &.active {
+        color: black;
+    }
+    &:hover {
+        color: black;
+    }
+}
+.navbar-light .navbar-nav .nav-link {
+        color: $color-dark;
+              
+}
+.form-inline {
+    border: 1px solid $color-dark;
+    padding: 0px;
+    // max-width: 200px;
+}
+.form-control {
+    border: none;
+    padding: 0;
+    padding-left: 13px;
+    background-color: #cadbed;
+    width: calc(100% - 48px) !important;
+    &:focus {
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+form .btn-outline-success {
+    padding: 3px 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    border: 1px solid $color-dark;
+    color: $color-light;
+    background-color: $color-dark;
+    &:hover,
+    &:active {
+        background-color: $color-light;
+        color: $color-dark;
+        border: 1px solid $color-dark;
+    }
+}
+.btn-success {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    border: none;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: $color-light;
+    color: $color-dark;
+    &:hover {
+        color: $color-light;
+        background-color: $color-dark;
+        border: 1px solid $color-dark;
+    }
+}
+.breadcrumb {
+    background-color: transparent;
+    padding: 16px 0;
+    &-item {
+        a {
+            color: #acc1dc;
+           
+        }
+        &.active {
+            color: #acc1dc;
+        }
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: '>';
+        color: $color-light;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .nav-item {
+        text-align: center;
+        border-left: 1px solid $color-dark;
+        &:last-of-type {
+            border-right: 1px solid $color-dark;
+        }
+    }
+}

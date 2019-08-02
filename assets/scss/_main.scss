@@ -1,0 +1,115 @@
+.main {
+    &__content {
+        margin-top: 30px;
+    }
+    .item {
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba($color-light, 0.8);
+            height: 180px;
+            position: relative;
+        }
+        &-wrapper {
+            border: 1px solid $color-light;
+            margin-bottom: 30px;
+        }
+        &-title {
+            padding-top: 0.75rem;
+            font-size: 1.75rem;
+            font-weight: 500;
+            margin-bottom: 7px;
+        }
+        &-description {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            margin-bottom: 15px;
+        }
+        &-characteristics {
+            margin-top: 15px;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            span {
+                display: block;
+            }
+        }
+        &-cost {
+            font-size: 1.75rem;
+            text-align: center;
+            font-weight: bold;
+        }
+        &-buttons {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            .item-button {
+                display: block;
+                width: 30px;
+                height: 30px;
+                border: 1px solid $color-dark;
+                padding: 1px;
+                margin-bottom: 10px;
+                border-radius: 0;
+                &:hover {
+                    background-color: $color-dark;
+                }
+                i {
+                    color: $color-dark;
+                    &:hover {
+                        color: $color-light;
+                    }
+                }
+            }
+        }
+        &-actions {
+            padding: 15px;
+            &__more,
+            &__cart {
+                font-size: 1.15rem;
+                border-radius: 0;
+                background-color: transparent;
+                border: 1px solid $color-light;
+                font-weight: 500;
+                margin-bottom: 15px;
+                height: 50px;
+                padding: 5px;
+                &:hover {
+                    color: $color-dark;
+                    background-color: $color-light;
+                }
+            }
+            &__cart {
+                background-color: rgba(#568dc6, 0.8);
+            }
+        }
+    }
+    &__link {
+        
+        font-size: 2.25rem;
+        letter-spacing: 0.01em;
+        text-align: center;
+        margin-bottom: 30px;
+        a {
+            color: $color-light;
+        }
+    }
+    &__filter {
+        
+        margin-top: 7px;
+        border-radius: 0;
+        border: 1px solid $color-light;
+        background-color: $color-dark;
+        color: $color-light;
+        font-size: 1.2rem;
+        
+    }
+}
+@media (max-width: 1200px) {
+    .main .item-actions {
+        &__more,
+        &__cart {
+            font-size: 0.9rem;
+        }
+    }
+}
