@@ -17,6 +17,23 @@
         margin: 9px 0;
         font-size: 1.3rem;
         font-weight: 100;
+        &-input {
+            width: 0.8;
+            height: 0.8;
+            margin-top: 10px;
+        }
+        .form-check-input::before {
+            display: block;
+            width: 0.8rem;
+            height: 0.8rem;
+            margin-top: 0px;
+            content: "";
+            border: 1px solid #ffffff;
+            background-color: #568dc5;
+        }
+        .form-check-input:checked::before {
+            background-color: #ffffff !important;
+        }
         
     }
     a {

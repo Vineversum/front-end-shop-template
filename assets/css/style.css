@@ -255,6 +255,20 @@ h1 {
     margin: 9px 0;
     font-size: 1.3rem;
     font-weight: 100; }
+    .sidebar .form-check-input {
+      width: 0.8;
+      height: 0.8;
+      margin-top: 10px; }
+    .sidebar .form-check .form-check-input::before {
+      display: block;
+      width: 0.8rem;
+      height: 0.8rem;
+      margin-top: 0px;
+      content: "";
+      border: 1px solid #ffffff;
+      background-color: #568dc5; }
+    .sidebar .form-check .form-check-input:checked::before {
+      background-color: #ffffff !important; }
   .sidebar a {
     color: #ffffff;
     font-size: 1.1rem;
