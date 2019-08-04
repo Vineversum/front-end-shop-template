@@ -27,7 +27,7 @@
           </button>
         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto navbar-list">
+            <ul class="navbar-nav navbar-list">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
@@ -54,7 +54,7 @@
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success header__search-btn" type="submit"><i class="fas fa-search"></i></button>
             </form>
-            <button type="button" class="btn btn-success header__cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            <button type="button" class="btn btn-success header__cart-btn"><div class="cart-counter" id="cart-counter"></div> <i class="fas fa-shopping-cart"></i></button>
           </div>
         </nav>
       </div>
@@ -431,89 +431,87 @@
       <aside class="aside col-lg-3 order-lg-first col-xs-12 order-last">
         <div class="container-fluid sidebar">
           <form action="URL">
-              <div class="form-group">
-                <legend>DEVICE TYPE</legend>
-                <div class="form-check">
+            <fieldset class="form-group">
+              <legend>DEVICE TYPE</legend>
+              <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1-1" checked>
-                <label class="form-check-label" for="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1-1">
                   Laptop
                 </label>
               </div>
-             <div class="form-check">
+              <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1-2">
-                <label class="form-check-label" for="defaultCheck2">
-                 Tablet
-                </label>
+                <label class="form-check-label" for="defaultCheck1-2">Tablet</label>
               </div>
-            </div>
+            </fieldset>
   
-            <div class="form-group">
+            <fieldset class="form-group">
                 <legend>COLOR</legend>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck2-1" checked>
-                    <label class="form-check-label" for="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck2-1">
                       Black
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck2-2">
-                    <label class="form-check-label" for="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2-2">
                       Red
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2-2">
-                    <label class="form-check-label" for="defaultCheck2">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2-3">
+                    <label class="form-check-label" for="defaultCheck2-3">
                       Green
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2-3">
-                    <label class="form-check-label" for="defaultCheck2">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2-4">
+                    <label class="form-check-label" for="defaultCheck2-4">
                       Blue
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2-4">
-                    <label class="form-check-label" for="defaultCheck2">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2-5">
+                    <label class="form-check-label" for="defaultCheck2-5">
                       Orange
                     </label>
                   </div>
-            </div>
+            </fieldset>
   
-            <div class="form-group">
+            <fieldset class="form-group">
                 <legend>RAM</legend>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck3-1" checked>
-                    <label class="form-check-label" for="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck3-1">
                       1GB
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck3-2">
-                    <label class="form-check-label" for="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck3-2">
                       2GB
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck3-3">
-                    <label class="form-check-label" for="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck3-3">
                       4GB
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck3-4">
-                    <label class="form-check-label" for="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck3-4">
                       6GB
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck3-5">
-                    <label class="form-check-label" for="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck3-5">
                       8GB
                     </label>
                   </div>
-            </div>
+            </fieldset>
             <a href="#">Show more options...</a>
             <button type="button" class="btn btn-primary btn-lg btn-block sidebar-btn">SUBMIT</button>
           </form>
